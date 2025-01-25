@@ -64,7 +64,7 @@ function processHTMLContent(htmlContent, jsonDataArray) {
     localStorage.setItem('ticTacToeCol', JSON.stringify(col));
 
     solveFootballTicTacToe(row, col);
-    printShuffledResponses();
+    printShuffledResponses(row, col);
     document.getElementById('result').innerText = "Dados processados com sucesso!";
 }
 
@@ -154,21 +154,26 @@ function solveFootballTicTacToe(rowInput, colInput) {
     }
 }
 
-function printShuffledResponses() {
-    const savedResults = localStorage.getItem('ticTacToeResults');
-    const rowData = localStorage.getItem('ticTacToeRow');
-    const colData = localStorage.getItem('ticTacToeCol');
+function printShuffledResponses(rowData, colData) {
+    const savedRow = JSON.parse(localStorage.getItem('ticTacToeRow'));
+    const savedCol = JSON.parse(localStorage.getItem('ticTacToeCol'));
 
     const limit = 3;
     let results = {};
 
     for (let i = 0; i < limit; i++) {
         for (let j = 0; j < limit; j++) {
-            const key = `${rowData[i]}/${colData[j]}`;
-            let response = savedResults[key];
+            let key;
+            if (savedRow) {
+                key = `${savedRow[i]}/${savedCol[j]}`;
+            } else {
+                key = `${rowData[i]}/${colData[j]}`;
+            }
+
+            let response = responses[key];
+
             const cell = document.getElementById(`cell-${i}-${j}`);
 
-            console.log(response);
             if (response) {
                 response = response.sort((a, b) => famousPlayers.includes(a) ? -1 : 1);
                 response = response.slice(0, 5);
@@ -185,17 +190,20 @@ function printShuffledResponses() {
 
 document.addEventListener('DOMContentLoaded', () => {
     const savedResults = localStorage.getItem('ticTacToeResults');
-    const savedRow = localStorage.getItem('ticTacToeRow');
-    const savedCol = localStorage.getItem('ticTacToeCol');
+    const savedRow = JSON.parse(localStorage.getItem('ticTacToeRow'));
+    const savedCol = JSON.parse(localStorage.getItem('ticTacToeCol'));
+    console.log(savedRow);
+    console.log(savedCol);
 
     if (savedResults) {
         const results = JSON.parse(savedResults);
 
         for (let i = 0; i < 3; i++) {
             for (let j = 0; j < 3; j++) {
-                const key = `${savedRow[i]}/${savedCol[j]}`;
+                const key = `${savedRow[j]}/${savedCol[i]}`;
                 let response = results[key];
                 const cell = document.getElementById(`cell-${i}-${j}`);
+                console.log(cell);
 
                 if (response) {
                     cell.textContent = response.join(', ');

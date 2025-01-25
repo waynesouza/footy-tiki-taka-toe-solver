@@ -5,7 +5,11 @@
   "description": "Extrai informações de uma página específica e processa com base em um código.",
   "permissions": ["activeTab", "scripting", "storage"],
   "action": {
-    "default_popup": "popup.html"
+    "default_popup": "popup.html",
+    "default_popup_position": {
+        "top": 100,
+        "left": 700
+    }
   },
   "host_permissions": [
     "https://playfootball.games/footy-tic-tac-toe/*"
