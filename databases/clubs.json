@@ -1,0 +1,202 @@
+[
+    {
+        "id": 8,
+        "short_code": "LIV",
+        "name": "Liverpool",
+        "centre": true,
+        "reputation": 10,
+        "c": 1
+    },
+    {
+        "id": 9,
+        "short_code": "MCI",
+        "name": "Manchester City",
+        "centre": false,
+        "reputation": 10,
+        "c": 1
+    },
+    {
+        "id": 14,
+        "short_code": "MUN",
+        "name": "Manchester United",
+        "centre": true,
+        "reputation": 10,
+        "c": 1
+    },
+    {
+        "id": 18,
+        "short_code": "CHE",
+        "name": "Chelsea",
+        "centre": true,
+        "reputation": 10,
+        "c": 1
+    },
+    {
+        "id": 19,
+        "short_code": "ARS",
+        "name": "Arsenal",
+        "centre": true,
+        "reputation": 10,
+        "c": 1
+    },
+    {
+        "id": 3468,
+        "short_code": "RMA",
+        "name": "Real Madrid",
+        "centre": true,
+        "reputation": 10,
+        "c": 2
+    },
+    {
+        "id": 7980,
+        "short_code": "ATM",
+        "name": "Atlético Madrid",
+        "centre": false,
+        "reputation": 1,
+        "c": 2
+    },
+    {
+        "id": 83,
+        "short_code": "BAR",
+        "name": "Barcelona",
+        "centre": true,
+        "reputation": 10,
+        "c": 2
+    },
+    {
+        "id": 503,
+        "short_code": "BAY",
+        "name": "Bayern München",
+        "centre": true,
+        "reputation": 10,
+        "c": 10
+    },
+    {
+        "id": 68,
+        "short_code": "DOR",
+        "name": "Dortmund",
+        "centre": false,
+        "reputation": 1,
+        "c": 10
+    },
+    {
+        "id": 2930,
+        "short_code": "INT",
+        "name": "Inter Milan",
+        "centre": false,
+        "reputation": 10,
+        "c": 12
+    },
+    {
+        "id": 113,
+        "short_code": "MIL",
+        "name": "AC Milan",
+        "centre": false,
+        "reputation": 10,
+        "c": 12
+    },
+    {
+        "id": 625,
+        "short_code": "JUV",
+        "name": "Juventus",
+        "centre": true,
+        "reputation": 10,
+        "c": 12
+    },
+    {
+        "id": 43,
+        "short_code": "LAZ",
+        "name": "Lazio",
+        "centre": false,
+        "reputation": 1,
+        "c": 12
+    },
+    {
+        "id": 591,
+        "short_code": "PSG",
+        "name": "Paris Saint-Germain",
+        "centre": false,
+        "reputation": 10,
+        "c": 3
+    },
+    {
+        "id": 629,
+        "short_code": "AJA",
+        "name": "Ajax",
+        "centre": false,
+        "reputation": 1,
+        "c": 8
+    },
+    {
+        "id": 652,
+        "short_code": "POR",
+        "name": "Porto",
+        "centre": false,
+        "reputation": 1,
+        "c": 5
+    },
+    {
+        "id": 605,
+        "short_code": "SLB",
+        "name": "Benfica",
+        "centre": false,
+        "reputation": 1,
+        "c": 5
+    },
+    {
+        "id": 682,
+        "short_code": "PSV",
+        "name": "PSV",
+        "centre": false,
+        "reputation": 1,
+        "c": 8
+    },
+    {
+        "id": 44,
+        "short_code": "OLM",
+        "name": "Olympique Marseille",
+        "centre": false,
+        "reputation": 1,
+        "c": 3
+    },
+    {
+        "id": 37,
+        "short_code": "ROM",
+        "name": "Roma",
+        "centre": false,
+        "reputation": 1,
+        "c": 12
+    },
+    {
+        "id": 597,
+        "short_code": "NAP",
+        "name": "Napoli",
+        "centre": false,
+        "reputation": 1,
+        "c": 12
+    },
+    {
+        "id": 6,
+        "short_code": "TOT",
+        "name": "Tottenham",
+        "centre": false,
+        "reputation": 1,
+        "c": 1
+    },
+    {
+        "id": 6789,
+        "short_code": "AMO",
+        "name": "Monaco",
+        "centre": false,
+        "reputation": 1,
+        "c": 3
+    },
+    {
+        "id": 34,
+        "short_code": "GAL",
+        "name": "Galatasaray",
+        "centre": false,
+        "reputation": 1,
+        "c": 34
+    }
+]

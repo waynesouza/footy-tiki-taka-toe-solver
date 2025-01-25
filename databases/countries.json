@@ -1,0 +1,110 @@
+[
+    {
+        "id": 6,
+        "name": "BRA"
+    },
+    {
+        "id": 3,
+        "name": "FRA"
+    },
+    {
+        "id": 5,
+        "name": "POR"
+    },
+    {
+        "id": 11,
+        "name": "ARG"
+    },
+    {
+        "id": 2,
+        "name": "ESP"
+    },
+    {
+        "id": 8,
+        "name": "NED"
+    },
+    {
+        "id": 10,
+        "name": "GER"
+    },
+    {
+        "id": 14,
+        "name": "SRB"
+    },
+    {
+        "id": 12,
+        "name": "ITA"
+    },
+    {
+        "id": 13,
+        "name": "BEL"
+    },
+    {
+        "id": 17,
+        "name": "DEN"
+    },
+    {
+        "id": 15,
+        "name": "CRO"
+    },
+    {
+        "id": 1,
+        "name": "ENG"
+    },
+    {
+        "id": 16,
+        "name": "URU"
+    },
+    {
+        "id": 27,
+        "name": "SWE"
+    },
+    {
+        "id": 28,
+        "name": "SUI"
+    },
+    {
+        "id": 37,
+        "name": "NOR"
+    },
+    {
+        "id": 25,
+        "name": "NGA"
+    },
+    {
+        "id": 29,
+        "name": "GHA"
+    },
+    {
+        "id": 22,
+        "name": "CMR"
+    },
+    {
+        "id": 18,
+        "name": "SEN"
+    },
+    {
+        "id": 19,
+        "name": "PRY"
+    },
+    {
+        "id": 20,
+        "name": "COL"
+    },
+    {
+        "id": 21,
+        "name": "CHL"
+    },
+    {
+        "id": 26,
+        "name": "MAR"
+    },
+    {
+        "id": 41,
+        "name": "CIV"
+    },
+    {
+        "id": 42,
+        "name": "ECU"
+    }
+]

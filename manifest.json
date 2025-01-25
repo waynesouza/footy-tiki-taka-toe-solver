@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "HTML Content Extractor",
+  "version": "1.0",
+  "description": "Extrai informações de uma página específica e processa com base em um código.",
+  "permissions": ["activeTab", "scripting", "storage"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "host_permissions": [
+    "https://playfootball.games/footy-tic-tac-toe/*"
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "clubs.json",
+        "countries.json",
+        "managers.json",
+        "players.json",
+        "teammates.json",
+        "trophies.json",
+        "famous-players.json"
+      ],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+[
+    {
+        "id": 18,
+        "name": "Brazilian Top Division"
+    },
+    {
+        "id": 17,
+        "name": "Copa do Brasil"
+    },
+    {
+        "id": 18,
+        "name": "Brazilian League Top Scorer"
+    },
+    {
+        "id": 22,
+        "name": "Champions League"
+    },
+    {
+        "id": 23,
+        "name": "Copa Libertadores"
+    },
+    {
+        "id": 24,
+        "name": "World Cup"
+    },
+    {
+        "id": 25,
+        "name": "Euros"
+    },
+    {
+        "id": 26,
+        "name": "Copa Amrica"
+    },
+    {
+        "id": 27,
+        "name": "Ballon dOr"
+    },
+    {
+        "id": 28,
+        "name": "World Cup Top Scorer"
+    }
+]
