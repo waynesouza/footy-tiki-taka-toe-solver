@@ -1,0 +1,746 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "England",
+      "type": 1,
+      "description": "England",
+      "displayName": "ENG"
+    },
+    {
+      "id": 2,
+      "name": "Spain",
+      "type": 1,
+      "description": "Spain",
+      "displayName": "ESP"
+    },
+    {
+      "id": 3,
+      "name": "France",
+      "type": 1,
+      "description": "France",
+      "displayName": "FRA"
+    },
+    {
+      "id": 5,
+      "name": "Portugal",
+      "type": 1,
+      "description": "Portugal",
+      "displayName": "POR"
+    },
+    {
+      "id": 6,
+      "name": "Brazil",
+      "type": 1,
+      "description": "Brazil",
+      "displayName": "BRA"
+    },
+    {
+      "id": 8,
+      "name": "Netherlands",
+      "type": 1,
+      "description": "Netherlands",
+      "displayName": "NLD"
+    },
+    {
+      "id": 10,
+      "name": "Germany",
+      "type": 1,
+      "description": "Germany",
+      "displayName": "GER"
+    },
+    {
+      "id": 11,
+      "name": "Argentina",
+      "type": 1,
+      "description": "Argentina",
+      "displayName": "ARG"
+    },
+    {
+      "id": 12,
+      "name": "Italy",
+      "type": 1,
+      "description": "Italy",
+      "displayName": "ITA"
+    },
+    {
+      "id": 13,
+      "name": "Belgium",
+      "type": 1,
+      "description": "Belgium",
+      "displayName": "BEL"
+    },
+    {
+      "id": 14,
+      "name": "Serbia",
+      "type": 1,
+      "description": "Serbia",
+      "displayName": "SRB"
+    },
+    {
+      "id": 15,
+      "name": "Croatia",
+      "type": 1,
+      "description": "Croatia",
+      "displayName": "CRO"
+    },
+    {
+      "id": 16,
+      "name": "Uruguay",
+      "type": 1,
+      "description": "Uruguay",
+      "displayName": "URU"
+    },
+    {
+      "id": 17,
+      "name": "Denmark",
+      "type": 1,
+      "description": "Denmark",
+      "displayName": "DEN"
+    },
+    {
+      "id": 18,
+      "name": "Senegal",
+      "type": 1,
+      "description": "Senegal",
+      "displayName": "SEN"
+    },
+    {
+      "id": 20,
+      "name": "Colombia",
+      "type": 1,
+      "description": "Colombia",
+      "displayName": "COL"
+    },
+    {
+      "id": 21,
+      "name": "Chile",
+      "type": 1,
+      "description": "Chile",
+      "displayName": "CHL"
+    },
+    {
+      "id": 22,
+      "name": "Cameroon",
+      "type": 1,
+      "description": "Cameroon",
+      "displayName": "CMR"
+    },
+    {
+      "id": 24,
+      "name": "Romania",
+      "type": 1,
+      "description": "Romania",
+      "displayName": "ROU"
+    },
+    {
+      "id": 25,
+      "name": "Nigeria",
+      "type": 1,
+      "description": "Nigeria",
+      "displayName": "NGA"
+    },
+    {
+      "id": 26,
+      "name": "Morocco",
+      "type": 1,
+      "description": "Morocco",
+      "displayName": "MAR"
+    },
+    {
+      "id": 27,
+      "name": "Sweden",
+      "type": 1,
+      "description": "Sweden",
+      "displayName": "SWE"
+    },
+    {
+      "id": 28,
+      "name": "Switzerland",
+      "type": 1,
+      "description": "Switzerland",
+      "displayName": "SUI"
+    },
+    {
+      "id": 29,
+      "name": "Ghana",
+      "type": 1,
+      "description": "Ghana",
+      "displayName": "GHA"
+    },
+    {
+      "id": 30,
+      "name": "Poland",
+      "type": 1,
+      "description": "Poland",
+      "displayName": "POL"
+    },
+    {
+      "id": 34,
+      "name": "Turkey",
+      "type": 1,
+      "description": "Turkey",
+      "displayName": "TUR"
+    },
+    {
+      "id": 35,
+      "name": "United States",
+      "type": 1,
+      "description": "United States",
+      "displayName": "USA"
+    },
+    {
+      "id": 36,
+      "name": "Czech Republic",
+      "type": 1,
+      "description": "Czech Republic",
+      "displayName": "CZE"
+    },
+    {
+      "id": 37,
+      "name": "Norway",
+      "type": 1,
+      "description": "Norway",
+      "displayName": "NOR"
+    },
+    {
+      "id": 41,
+      "name": "Cote d'Ivoire",
+      "type": 1,
+      "description": "Ivory Coast",
+      "displayName": "CIV"
+    },
+    {
+      "id": 83,
+      "name": "AC Milan",
+      "type": 2,
+      "description": "AC Milan",
+      "displayName": "MIL",
+      "full": true
+    },
+    {
+      "id": 84,
+      "name": "Arsenal",
+      "type": 2,
+      "description": "Arsenal",
+      "displayName": "ARS",
+      "full": true
+    },
+    {
+      "id": 85,
+      "name": "Roma",
+      "type": 2,
+      "description": "Roma",
+      "displayName": "ROM",
+      "full": true
+    },
+    {
+      "id": 86,
+      "name": "Atlético Madrid",
+      "type": 2,
+      "description": "Atlético Madrid",
+      "displayName": "ATM",
+      "full": true
+    },
+    {
+      "id": 88,
+      "name": "Borussia Dortmund",
+      "type": 2,
+      "description": "Borussia Dortmund",
+      "displayName": "DOR",
+      "full": true
+    },
+    {
+      "id": 91,
+      "name": "Bayern München",
+      "type": 2,
+      "description": "Bayern München",
+      "displayName": "BAY",
+      "full": true
+    },
+    {
+      "id": 93,
+      "name": "Liverpool",
+      "type": 2,
+      "description": "Liverpool",
+      "displayName": "LIV",
+      "full": true
+    },
+    {
+      "id": 99,
+      "name": "Inter Milan",
+      "type": 2,
+      "description": "Inter Milan",
+      "displayName": "INT",
+      "full": true
+    },
+    {
+      "id": 112,
+      "name": "Barcelona",
+      "type": 2,
+      "description": "Barcelona",
+      "displayName": "BAR",
+      "full": true
+    },
+    {
+      "id": 113,
+      "name": "Galatasaray",
+      "type": 2,
+      "description": "Galatasaray",
+      "displayName": "GAL",
+      "full": true
+    },
+    {
+      "id": 114,
+      "name": "Tottenham Hotspur",
+      "type": 2,
+      "description": "Tottenham Hotspur",
+      "displayName": "TOT",
+      "full": true
+    },
+    {
+      "id": 117,
+      "name": "AS Monaco",
+      "type": 2,
+      "description": "AS Monaco",
+      "displayName": "AMO",
+      "full": true
+    },
+    {
+      "id": 129,
+      "name": "Marseille",
+      "type": 2,
+      "description": "Marseille",
+      "displayName": "OLM",
+      "full": true
+    },
+    {
+      "id": 133,
+      "name": "Manchester City",
+      "type": 2,
+      "description": "Manchester City",
+      "displayName": "MCI",
+      "full": true
+    },
+    {
+      "id": 135,
+      "name": "Benfica",
+      "type": 2,
+      "description": "Benfica",
+      "displayName": "SLB",
+      "full": true
+    },
+    {
+      "id": 151,
+      "name": "PSV",
+      "type": 2,
+      "description": "PSV",
+      "displayName": "PSV",
+      "full": true
+    },
+    {
+      "id": 153,
+      "name": "Lazio",
+      "type": 2,
+      "description": "Lazio",
+      "displayName": "LAZ",
+      "full": true
+    },
+    {
+      "id": 160,
+      "name": "Real Madrid",
+      "type": 2,
+      "description": "Real Madrid",
+      "displayName": "RMA",
+      "full": true
+    },
+    {
+      "id": 167,
+      "name": "Juventus",
+      "type": 2,
+      "description": "Juventus",
+      "displayName": "JUV",
+      "full": true
+    },
+    {
+      "id": 172,
+      "name": "Paris Saint-Germain",
+      "type": 2,
+      "description": "Paris Saint-Germain",
+      "displayName": "PSG",
+      "full": true
+    },
+    {
+      "id": 176,
+      "name": "Ajax",
+      "type": 2,
+      "description": "Ajax",
+      "displayName": "AJA",
+      "full": true
+    },
+    {
+      "id": 179,
+      "name": "Chelsea",
+      "type": 2,
+      "description": "Chelsea",
+      "displayName": "CHE",
+      "full": true
+    },
+    {
+      "id": 186,
+      "name": "Porto",
+      "type": 2,
+      "description": "Porto",
+      "displayName": "POR",
+      "full": true
+    },
+    {
+      "id": 204,
+      "name": "Manchester United",
+      "type": 2,
+      "description": "Manchester United",
+      "displayName": "MUN",
+      "full": true
+    },
+    {
+      "id": 262,
+      "name": "SSC Napoli",
+      "type": 2,
+      "description": "SSC Napoli",
+      "displayName": "NAP",
+      "full": true
+    },
+    {
+      "id": 285,
+      "name": "MLS",
+      "type": 3,
+      "description": "USA Top Division",
+      "displayName": "USA Top Div",
+      "dataFrom": "1996"
+    },
+    {
+      "id": 286,
+      "name": "Saudi Pro League",
+      "type": 3,
+      "description": "Saudi Pro League",
+      "displayName": "Saudi Pro Lge",
+      "dataFrom": "1999/00"
+    },
+    {
+      "id": 287,
+      "name": "Süper Lig",
+      "type": 3,
+      "description": "Turkish Top Division",
+      "displayName": "Turkish Top Div",
+      "dataFrom": "1958/59"
+    },
+    {
+      "id": 288,
+      "name": "Eredivisie",
+      "type": 3,
+      "description": "Dutch Top Division",
+      "displayName": "Dutch Top Div",
+      "dataFrom": "1956/57"
+    },
+    {
+      "id": 289,
+      "name": "Liga Portugal",
+      "type": 3,
+      "description": "Liga Portugal",
+      "displayName": "Liga Portugal",
+      "dataFrom": "1990/91"
+    },
+    {
+      "id": 293,
+      "name": "Jupiler Pro League",
+      "type": 3,
+      "description": "Belgian Top Division",
+      "displayName": "Belgian Top Div",
+      "dataFrom": "1960/61"
+    },
+    {
+      "id": 299,
+      "name": "Chinese Super League",
+      "type": 3,
+      "description": "Chinese Top Division",
+      "displayName": "Chinese Top Div",
+      "dataFrom": "2006"
+    },
+    {
+      "id": 373,
+      "name": "Scottish Premiership",
+      "type": 3,
+      "description": "Scottish Top Division",
+      "displayName": "Scottish Top Div",
+      "dataFrom": "1997/98"
+    },
+    {
+      "id": 300,
+      "name": "Sir Alex Ferguson",
+      "type": 4,
+      "description": "Sir Alex Ferguson",
+      "displayName": "Ferguson",
+      "full": true
+    },
+    {
+      "id": 301,
+      "name": "Pep Guardiola",
+      "type": 4,
+      "description": "Pep Guardiola",
+      "displayName": "Guardiola",
+      "full": true
+    },
+    {
+      "id": 302,
+      "name": "José Mourinho",
+      "type": 4,
+      "description": "José Mourinho",
+      "displayName": "Mourinho",
+      "full": true
+    },
+    {
+      "id": 303,
+      "name": "Carlo Ancelotti",
+      "type": 4,
+      "description": "Carlo Ancelotti",
+      "displayName": "Ancelotti",
+      "full": true
+    },
+    {
+      "id": 304,
+      "name": "Louis van Gaal",
+      "type": 4,
+      "description": "Louis van Gaal",
+      "displayName": "van Gaal",
+      "full": true
+    },
+    {
+      "id": 305,
+      "name": "Rafael Benítez",
+      "type": 4,
+      "description": "Rafael Benítez",
+      "displayName": "Benítez",
+      "full": true
+    },
+    {
+      "id": 306,
+      "name": "Arsène Wenger",
+      "type": 4,
+      "description": "Arsène Wenger",
+      "displayName": "Wenger",
+      "full": true
+    },
+    {
+      "id": 307,
+      "name": "Jürgen Klopp",
+      "type": 4,
+      "description": "Jürgen Klopp",
+      "displayName": "Klopp",
+      "full": true
+    },
+    {
+      "id": 314,
+      "name": "Lionel Messi",
+      "type": 5,
+      "description": "Lionel Messi",
+      "displayName": "Messi",
+      "full": true
+    },
+    {
+      "id": 315,
+      "name": "Cristiano Ronaldo",
+      "type": 5,
+      "description": "Cristiano Ronaldo",
+      "displayName": "Cristiano Ronaldo",
+      "full": true
+    },
+    {
+      "id": 316,
+      "name": "Zlatan Ibrahimović",
+      "type": 5,
+      "description": "Zlatan Ibrahimović",
+      "displayName": "Ibrahimović",
+      "full": true
+    },
+    {
+      "id": 317,
+      "name": "Ronaldo Nazário",
+      "type": 5,
+      "description": "Ronaldo Nazário",
+      "displayName": "Ronaldo Nazário",
+      "full": true
+    },
+    {
+      "id": 318,
+      "name": "David Beckham",
+      "type": 5,
+      "description": "David Beckham",
+      "displayName": "Beckham",
+      "full": true
+    },
+    {
+      "id": 319,
+      "name": "Ángel Di María",
+      "type": 5,
+      "description": "Ángel Di María",
+      "displayName": "Di María",
+      "full": true
+    },
+    {
+      "id": 320,
+      "name": "Gianluigi Buffon",
+      "type": 5,
+      "description": "Gianluigi Buffon",
+      "displayName": "Buffon",
+      "full": true
+    },
+    {
+      "id": 321,
+      "name": "Romelu Lukaku",
+      "type": 5,
+      "description": "Romelu Lukaku",
+      "displayName": "Lukaku",
+      "full": true
+    },
+    {
+      "id": 322,
+      "name": "Arjen Robben",
+      "type": 5,
+      "description": "Arjen Robben",
+      "displayName": "Robben",
+      "full": true
+    },
+    {
+      "id": 323,
+      "name": "Zinédine Zidane",
+      "type": 5,
+      "description": "Zinédine Zidane",
+      "displayName": "Zidane",
+      "full": true
+    },
+    {
+      "id": 333,
+      "name": "Premier League Top Scorer",
+      "type": 6,
+      "description": "English Top Division Top Goal Scorer",
+      "displayName": "English Top Div Golden Boot",
+      "dataFrom": "1992/93",
+      "full": false
+    },
+    {
+      "id": 336,
+      "name": "Spanish League Top Scorer",
+      "type": 6,
+      "description": "Spanish Top Division Top Scorer",
+      "displayName": "Spanish Top Div Golden Boot",
+      "dataFrom": "1960/61",
+      "full": false
+    },
+    {
+      "id": 339,
+      "name": "Italian League Top Scorer",
+      "type": 6,
+      "description": "Italian Top Division Top Scorer",
+      "displayName": "Italian Top Div Golden Boot",
+      "dataFrom": "1960/61",
+      "full": false
+    },
+    {
+      "id": 352,
+      "name": "Champions League",
+      "type": 6,
+      "description": "Champions League",
+      "displayName": "Champions Lge",
+      "dataFrom": "1992/93",
+      "full": true
+    },
+    {
+      "id": 354,
+      "name": "World Cup",
+      "type": 6,
+      "description": "World Cup",
+      "displayName": "World Cup",
+      "dataFrom": "1958",
+      "full": true
+    },
+    {
+      "id": 355,
+      "name": "Euros",
+      "type": 6,
+      "description": "Euros",
+      "displayName": "Euros",
+      "full": true
+    },
+    {
+      "id": 356,
+      "name": "Copa América",
+      "type": 6,
+      "description": "Copa América",
+      "displayName": "Copa América",
+      "dataFrom": "1960",
+      "full": true
+    },
+    {
+      "id": 357,
+      "name": "Ballon d'Or",
+      "type": 6,
+      "description": "Ballon d'Or",
+      "displayName": "Ballon d'Or",
+      "full": true
+    },
+    {
+      "id": 358,
+      "name": "World Cup Top Scorer",
+      "type": 6,
+      "description": "World Cup Top Goal Scorer",
+      "displayName": "World Cup Golden Boot",
+      "dataFrom": "1958",
+      "full": true
+    },
+    {
+      "id": 374,
+      "name": "Europa League",
+      "type": 6,
+      "description": "Europa League",
+      "displayName": "Europa Lge",
+      "dataFrom": "2009/10",
+      "full": true
+    },
+    {
+      "id": 375,
+      "name": "Champions League Top Goal scorer",
+      "type": 6,
+      "description": "Champions League Top Goal scorer",
+      "displayName": "Champions Lge Golden Boot",
+      "dataFrom": "1992/93",
+      "full": true
+    },
+    {
+      "id": 378,
+      "name": "UEFA Cup Winners",
+      "type": 6,
+      "description": "UEFA Cup",
+      "displayName": "UEFA Cup",
+      "dataTo": "2008/09",
+      "full": true
+    },
+    {
+      "id": 380,
+      "name": "European Cup Winners",
+      "type": 6,
+      "description": "European Cup",
+      "displayName": "European Cup",
+      "dataTo": "1991/92",
+      "full": true
+    },
+    {
+      "id": 381,
+      "name": "European Cup Top Goal scorer",
+      "type": 6,
+      "description": "European Cup Top Goal scorer",
+      "displayName": "European Cup Golden Boot",
+      "dataTo": "1991/92",
+      "full": true
+    }
+  ]
+}

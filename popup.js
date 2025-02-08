@@ -1,7 +1,7 @@
 const runBtn = document.getElementById('run-btn');
 
 let responses = {};
-let playersData, trophiesData, countriesData, managersData, clubsData, teammatesData, famousPlayers;
+let data, playersData, famousPlayers;
 
 if (runBtn) {
     runBtn.addEventListener('click', () => {
@@ -13,12 +13,8 @@ if (runBtn) {
                 if (results && results[0] && results[0].result) {
                     const htmlContent = results[0].result;
                     loadAllJSONData().then(jsonDataArray => {
-                        clubsData = jsonDataArray[0];
-                        countriesData = jsonDataArray[1];
-                        managersData = jsonDataArray[2];
-                        playersData = jsonDataArray[3];
-                        teammatesData = jsonDataArray[4];
-                        trophiesData = jsonDataArray[5];
+                        data = jsonDataArray[0];
+                        playersData = jsonDataArray[1];
                         processHTMLContent(htmlContent, jsonDataArray);
                     });
                 }
@@ -37,12 +33,8 @@ function loadJSONData(fileName) {
 
 function loadAllJSONData() {
     const files = [
-        "databases/clubs.json",
-        "databases/countries.json",
-        "databases/managers.json",
+        "databases/data.json",
         "databases/players.json",
-        "databases/teammates.json",
-        "databases/trophies.json",
         "databases/famous-players.json"
     ];
 
@@ -55,7 +47,7 @@ function extractHTML() {
 
 function processHTMLContent(htmlContent, jsonDataArray) {
     const headers = findHeaders(htmlContent);
-    famousPlayers = loadFamousPlayers(jsonDataArray[6]);
+    famousPlayers = loadFamousPlayers(jsonDataArray[2]);
 
     const row = headers.slice(0, 3);
     const col = headers.slice(3, 6);
@@ -72,76 +64,33 @@ function findHeaders(htmlContent) {
     const parser = new DOMParser();
     const doc = parser.parseFromString(htmlContent, 'text/html');
 
-    const divs = doc.querySelectorAll('div.font-bebas-neue.text-xl, div.mt-1.text-center.leading-none.font-bebas-neue');
+    const images = doc.querySelectorAll('img[src*="/media/categories/"]');
+    const numbers = [];
 
-    return Array.from(divs).map(div => div.textContent.replace(/[^A-Za-z\s]/g, '').trim());
+    images.forEach(img => {
+        const src = img.getAttribute('src');
+        const match = src.match(/\/media\/categories\/(\d+)\.webp/);
+        if (match) {
+            numbers.push(match[1]);
+        }
+    });
+
+    return numbers;
 }
 
 function loadFamousPlayers(jsonData) {
     return jsonData.map(player => player.n);
 }
 
-function getData(name) {
-    for (const club of clubsData) {
-        if (club.short_code === name) {
-            return { t: club.id };
-        }
-    }
-
-    for (const manager of managersData) {
-        if (manager.name === name) {
-            return { m: manager.id };
-        }
-    }
-
-    for (const teammate of teammatesData) {
-        if (teammate.name === name) {
-            return { s: teammate.id };
-        }
-    }
-
-    for (const trophy of trophiesData) {
-        if (trophy.name === name) {
-            return { a: trophy.id };
-        }
-    }
-
-    for (const country of countriesData) {
-        if (country.name === name) {
-            return { c: country.id };
-        }
-    }
-}
-
 function findPlayer(row, col) {
     responses[`${row}/${col}`] = [];
 
-    const rowData = getData(row);
-    const rowKey = Object.keys(rowData)[0];
-    const rowValue = rowData[rowKey];
-
-    const colData = getData(col);
-    const colKey = Object.keys(colData)[0];
-    const colValue = colData[colKey];
-
     for (const player of playersData) {
-        if (rowKey === 'c' && colKey !== 'c' && player[rowKey] === rowValue && player[colKey] && player[colKey].includes(colValue)) {
-            responses[`${row}/${col}`].push(player.n);
-            continue;
-        }
 
-        if (colKey === 'c' && rowKey !== 'c' && player[colKey] === colValue && player[rowKey] && player[rowKey].includes(rowValue)) {
-            responses[`${row}/${col}`].push(player.n);
-            continue;
-        }
+        const attr = 'v'
 
-        if (rowKey === 'c' && colKey === 'c' && player[rowKey] === rowValue && player[colKey] === colValue) {
-            responses[`${row}/${col}`].push(player.n);
-            continue;
-        }
-
-        if (rowKey !== 'c' && colKey !== 'c' && player[rowKey] && player[rowKey].includes(rowValue) && player[colKey] && player[colKey].includes(colValue)) {
-            responses[`${row}/${col}`].push(player.n);
+        if (player[attr].includes(parseInt(row)) && player[attr].includes(parseInt(col))) {
+            responses[`${row}/${col}`].push(player['n']);
         }
     }
 }
@@ -175,9 +124,9 @@ function printShuffledResponses(rowData, colData) {
             const cell = document.getElementById(`cell-${i}-${j}`);
 
             if (response) {
-                response = response.sort((a, b) => famousPlayers.includes(a) ? -1 : 1);
+                response = response.sort((a) => famousPlayers.includes(a) ? -1 : 1);
                 response = response.slice(0, 5);
-                cell.textContent = response.join(', ');
+                cell.innerHTML = response.join('\n').replace(/\n/g, '<br>');
                 results[key] = response;
             } else {
                 cell.textContent = 'N/A';
@@ -192,8 +141,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const savedResults = localStorage.getItem('ticTacToeResults');
     const savedRow = JSON.parse(localStorage.getItem('ticTacToeRow'));
     const savedCol = JSON.parse(localStorage.getItem('ticTacToeCol'));
-    console.log(savedRow);
-    console.log(savedCol);
 
     if (savedResults) {
         const results = JSON.parse(savedResults);
@@ -206,7 +153,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 console.log(cell);
 
                 if (response) {
-                    cell.textContent = response.join(', ');
+                    cell.innerHTML = response.join('\n').replace(/\n/g, '<br>');  // Replacing \n with <br>
                 } else {
                     cell.textContent = 'N/A';
                 }
